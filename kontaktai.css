@@ -1,0 +1,140 @@
+.hed{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  } 
+ .column {
+    float: left;
+    width: 50%;
+    margin-top: 2%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  .column1{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  } 
+  form {
+    background-color: rgb(64, 65, 66);
+    max-width: 640px;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    color:  antiquewhite;
+  }
+  .form-control {
+    text-align: left;
+    margin-bottom: 25px;
+    background-color: transparent;
+    color: inherit;
+  }
+  div#row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  button {
+    background-color: rgb(38, 42, 42) ;
+    border: 1px solid black;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: inherit;
+    height: 40px;
+  }
+  button:hover{
+    background-color: slategrey;
+  }
+ .input-group span{
+    margin-top: -15px;
+    font-size: 15px;
+    color: #df5f5f;
+  }
+  .input-group span i{
+    color: seagreen;
+  }
+  .success-message span{
+    margin-top: -15px;
+    font-size: 18px;
+    color: seagreen;
+  }
+  .success-message span i{
+    color: seagreen;
+  }
+  @media only screen and (max-width: 900px){
+    .column1 > .hed h2{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    form{
+      font-size: 17px;
+    }
+  }
+  @media only screen and (max-width: 960px){
+    .column1 > .hed h2{
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
+    form{
+      font-size: 15px;
+    }
+    .column{
+      width: 95%;
+      margin-left: 2%;
+    }
+    .column1{
+      width: 100%;
+      font-size: 16px;
+    }
+   .column{
+    border-radius: 30px 30px 0px 0px;
+   }
+   .column1{
+    border-radius: 0px 0px 30px 30px;
+   }
+  }
+  @media only screen and (max-width: 660px){
+    #row{
+      width: 100%;
+    }
+    form{
+      font-size: 14px;
+    }
+    .column{
+      width: 95%;
+      margin-left: 2%;
+    }
+    .column1{
+      width: 100%;
+      font-size: 16px;
+    }
+   .column{
+    border-radius: 30px 30px 0px 0px;
+   }
+   .column1{
+    border-radius: 0px 0px 30px 30px;
+   }
+   .column1 > .hed h2{
+    font-size: 10px;
+    margin-bottom: 15px;
+   }
+   button{
+    font-size: 16px;
+   }
+    
+  
+  }

@@ -1,0 +1,162 @@
+form {
+    background-color: rgb(64, 65, 66);
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+    color:  antiquewhite;
+}
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+}
+.form-check-label{
+    padding-top: 3px;
+    margin-left: 2px;
+}
+input[type=radio]{
+    width: 15px;
+    height: 15px;
+}
+.form-check-input{
+    width: 2px;
+    height: 2px;
+}
+        
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+.form-control input,
+.form-control select,
+.form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+        
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: 5px;
+}
+ 
+textarea:not(:focus) + .callout:not(:hover){
+    transform: scale(0);
+    transition: .25s transform;
+  }
+  input:not(:focus) + .callout:not(:hover) {
+    transform: scale(0);
+    transition: .25s transform;
+  }
+  
+  .callout {
+    transition: .5s cubic-bezier(.25,.1,.3,1.5) transform;
+    transform-origin: 1.4em -.4em;
+  }
+  .callout {
+    color: black;	
+    position: absolute;
+    max-width: 14em;
+    padding: .6em .8em;
+    border-radius: .3em;
+    margin: .3em 0 0 -.2em;
+    background: #fed;
+    border: 1px solid rgba(0,0,0,.3);
+    box-shadow: .05em .2em .6em rgba(0,0,0,.2);
+    font-size: 75%;
+  }
+  
+  .callout:before {
+    content: "";
+    position: absolute;
+    top: -.4em;
+    left: 1em;
+    padding: .35em;
+    background: inherit;
+    border: inherit;
+    border-right: 0;
+    border-bottom: 0;
+    transform: rotate(45deg);
+  }
+
+.question{
+    text-align: left;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+
+tbody > tr{
+    border-radius: 1ex;
+    background-color: rgba(0,0,0,0.05);
+}
+.form-select{
+    background-color:rgb(88, 88, 86);
+    color: inherit;
+}
+th{
+    color:antiquewhite;
+    text-align: center;
+}
+.name{
+    text-align: left;
+}
+.raiting{
+    text-align: center;
+    min-width: 3em;
+}
+.submit-box{
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+}
+.input-group span{
+    margin-top: -15px;
+    font-size: 15px;
+    color: #df5f5f;
+  }
+  .input-group span i{
+    color: seagreen;
+  }
+  .success-message span{
+    margin-top: 20px;
+    font-size: 18px;
+    color: seagreen;
+  }
+  .success-message span i{
+    color: seagreen;
+  }
+  .submit-box span{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #df5f5f;
+  }
+
+@media only screen and (max-width: 600px){
+    form{
+        font-size: 14px;
+        width: 100%;
+    }
+    /*table{
+        width: 100%;
+       
+    }*/
+    th{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 14px;
+    }
+    button{
+        font-size: 14px;
+
+    }
+}

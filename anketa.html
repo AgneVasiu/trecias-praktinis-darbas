@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anketa</title>
+    <link rel="shourcut icon" href="icon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="anketa.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wraper">
+      <header id="header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">Kino Studija</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html"> Pagrindinis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galerija.html">Galerija</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="anketa.html"
+                    >Anketa</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="kontaktai.html">Kontaktai</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Nustatymai
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="schema.html">Schema</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li class="nav-opion">
+                      <span>Pasirinkite tema</span>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="radio1"
+                          checked
+                        />
+                        <label class="form-check-label" for="radio1">
+                          Tamsi
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="flexRadioDefault"
+                          id="radio2"
+                        />
+                        <label class="form-check-label" for="radio2">
+                          Šviesi
+                        </label>
+                      </div>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <span>Pasirinkite antraščiu spalva</span>
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col">
+                            <button class="btn" id="btn1"></button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn2"></button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn3"></button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn4"></button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn5"></button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn6"></button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn7"></button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn8"></button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <span>Pasirinkite antraščiu dydi</span>
+                      <div class="container text-center">
+                        <div class="row">
+                          <div class="col">
+                            <button class="btn" id="btn9">25</button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn10">35</button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn11">40</button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn12">50</button>
+                          </div>
+                          <div class="col">
+                            <button class="btn" id="btn13">Orginalus</button>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="zaidimas.html">Žaidimas</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div id="container_main">
+        <nav id="crumb" aria-label="breadcrumb">
+          <ol class="breadcrumb row row-cols-auto">
+            <li class="breadcrumb-item col">
+              <a href="home.html">Pagrindinis</a>
+            </li>
+            <li class="breadcrumb-item col active" aria-current="page">
+              Anketa
+            </li>
+          </ol>
+        </nav>
+        <div class="page_content">
+          <div class="row">
+            <div class="col-md-8">
+              <form id="form">
+                <div class="form-control">
+                  <div class="input-group">
+                    <label for="name" id="label-name"> Vardas </label>
+                    <!-- teksto ivedimas -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="Name"
+                      placeholder="Iveskire savo varda"
+                      onkeyup="validateName()"
+                    />
+                    <span id="name-error"></span>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <div class="input-group">
+                    <label for="email" id="label-email">
+                      Elektroninis paštas
+                    </label>
+                    <!-- Input Type Email-->
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Iveskite elekroninį pašta"
+                      onkeyup="validateEmail()"
+                    />
+                    <span id="email-error"></span>
+                  </div>
+                </div>
+                <div class="form-control">
+                  <div class="input-group">
+                    <label for="age" id="label-age"> Amžius </label>
+
+                    <!-- teksto ivedimo laukas -->
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="age"
+                      placeholder="Iveskire savo amžių"
+                      onkeyup="validateAge()"
+                    />
+                    <span id="age-error"></span>
+                  </div>
+                </div>
+
+                <div class="form-control">
+                  <label for="role" id="label-role">
+                    Ar žinojote apie mūsų kino studiją?
+                  </label>
+
+                  <!-- pasirinkimu juosta -->
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Pasirinkite</option>
+                    <option value="taip">Taip, žinojau</option>
+                    <option value="ne">Ne, nežinojau</option>
+                  </select>
+                </div>
+
+                <div class="form-control">
+                  <label>
+                    Ar rekomenduotumėte mūsų "Kino Studiją" savo draugams?
+                  </label>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="recommed-1"
+                    />
+                    <label class="form-check-label" for="recommed-1">
+                      Taip
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="recommed-2"
+                    />
+                    <label class="form-check-label" for="recommed-2">
+                      Ne
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="recommed-3"
+                    />
+                    <label class="form-check-label" for="recommed-3">
+                      Galbūt
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-control">
+                  <label
+                    >Koks filmų žandras tau labiausiai patinka? <br />
+                    <small>(Galima pažymėti daugiau nei vieną)</small>
+                  </label>
+                  <!-- Input Type Checkbox -->
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp"> Siaubo </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp"> Dramos </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Komedijos
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Mistiniai
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Trileriai
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Moksliniai
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Muzikiniai
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Fantastiniai
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Animaciniai
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp">
+                      Romantiniai
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp"> Nuotykių </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="inp"
+                    />
+                    <label class="form-check-label" for="inp"> Kita </label>
+                  </div>
+                </div>
+
+                <div class="form-control">
+                  <div class="input-group">
+                    <label for="comment">
+                      Jei pasirinkai kitą žandrą įrašyk koks jis?
+                    </label>
+                    <textarea
+                      name="comment"
+                      class="form-control"
+                      id="comment"
+                      placeholder="Enter your comment here"
+                      onkeyup="validateComment()"
+                    ></textarea>
+                    <span id="message-error"></span>
+                  </div>
+                </div>
+                <div class="table-responsive">
+                  <caption class="question">
+                    Kaip vertinate šiuos filmus (1 iki 5)
+                  </caption>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">1</th>
+                        <th scope="col">2</th>
+                        <th scope="col">3</th>
+                        <th scope="col">4</th>
+                        <th scope="col">5</th>
+                        <th scope="col">Nežinau tokio</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="name" scope="row">Saulėlydis</th>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="1"
+                              name="option"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="2"
+                              name="option"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="3"
+                              name="option"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="4"
+                              name="option"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="5"
+                              name="option"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="6"
+                              name="option"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="option odd">
+                        <th class="name" scope="row">8 mylia</th>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="7"
+                              name="option1"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="8"
+                              name="option1"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="9"
+                              name="option1"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="10"
+                              name="option1"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="11"
+                              name="option1"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="12"
+                              name="option1"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="option odd">
+                        <th class="name" scope="row">Kalėdų dvasia</th>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="13"
+                              name="option2"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="14"
+                              name="option2"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="15"
+                              name="option2"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="16"
+                              name="option2"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="17"
+                              name="option2"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="18"
+                              name="option2"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="option odd">
+                        <th class="name" scope="row">Šuo</th>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="19"
+                              name="option3"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="20"
+                              name="option3"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="21"
+                              name="option3"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="22"
+                              name="option3"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="23"
+                              name="option3"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="24"
+                              name="option3"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="option odd">
+                        <th class="name" scope="row">Rifas. Persekiojimas</th>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="25"
+                              name="option4"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="26"
+                              name="option4"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="27"
+                              name="option4"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="28"
+                              name="option4"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="29"
+                              name="option4"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="30"
+                              name="option4"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="option odd">
+                        <th class="name" scope="row">Kimi</th>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="31"
+                              name="option5"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="32"
+                              name="option5"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="33"
+                              name="option5"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="34"
+                              name="option5"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="35"
+                              name="option5"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                        <td class="raiting">
+                          <label>
+                            <input
+                              class="form-check-input"
+                              id="36"
+                              name="option5"
+                              type="radio"
+                            />
+                          </label>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <button
+                  class="btn btn-secondary"
+                  type="submit"
+                  value="submit"
+                  onclick="return validateForm()"
+                >
+                  Pateikti
+                </button>
+                <div class="submit-box">
+                  <span id="submit-error"></span>
+                </div>
+                <div class="success-message">
+                  <span id="sucsess-note"></span>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4">
+              <h1>Naujienos</h1>
+              <p>
+                Šiandien galerijoje galite pažiūrėti naujausius filmus sukurtus
+                2022 metais.
+              </p>
+              <p>Šiandien buvo paskelbta nauja filmo premijera.</p>
+              <p>2022 metai nenustoja stebinti žiūrovų kuriamais filmais.</p>
+              <p></p>
+              <p></p>
+              <p></p>
+              <h1 class="h-tag">Naujos taisyklės kine</h1>
+              <div class="dotted">
+                Nuo dabar galima žiūrėti filmus kino tetre be apsauginės veido
+                kaukės.
+              </div>
+              <p>
+                Užkandžius galite nusipirki pas mus turime labai platų užkandžių
+                pasiūlymą.
+              </p>
+              <h1>Šiandien rodomi filmai</h1>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="card-footer text-muted">
+        Copyrights &copy; 2022 || Designed by Agne Vasiukevičiute
+      </footer>
+    </div>
+    <script>
+      if ("light-theme" in localStorage) {
+        document.body.classList.add("light-theme");
+      } else {
+        localStorage.removeItem("light-theme");
+        document.body.classList.remove("light-theme");
+      }
+    </script>
+    <script src="anketa.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="theme.js"></script>
+  </body>
+</html>
